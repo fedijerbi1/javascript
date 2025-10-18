@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daily Routine Tracker</title>
+    <link rel="stylesheet" href="daily-routine.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>📅 Daily Routine Tracker</h1>
+            <p class="date" id="currentDate"></p>
+        </header>
+
+        <div class="progress-section">
+            <div class="progress-header">
+                <span>Daily Progress</span>
+                <span id="progressText">0/0</span>
+            </div>
+            <div class="progress-bar">
+                <div class="progress-fill" id="progressFill"></div>
+            </div>
+        </div>
+
+        <section class="routine-section">
+            <h2>🌅 Morning Routine</h2>
+            <div class="routine-list">
+                <div class="routine-item">
+                    <input type="checkbox" id="morning1" class="routine-checkbox">
+                    <label for="morning1">
+                        <span class="time">6:00 AM</span>
+                        <span class="task">Wake up & Hydrate</span>
+                    </label>
+                </div>
+                <div class="routine-item">
+                    <input type="checkbox" id="morning2" class="routine-checkbox">
+                    <label for="morning2">
+                        <span class="time">6:30 AM</span>
+                        <span class="task">Morning Exercise</span>
+                    </label>
+                </div>
+                <div class="routine-item">
+                    <input type="checkbox" id="morning3" class="routine-checkbox">
+                    <label for="morning3">
+                        <span class="time">7:30 AM</span>
+                        <span class="task">Healthy Breakfast</span>
+                    </label>
+                </div>
+                <div class="routine-item">
+                    <input type="checkbox" id="morning4" class="routine-checkbox">
+                    <label for="morning4">
+                        <span class="time">8:00 AM</span>
+                        <span class="task">Plan the Day</span>
+                    </label>
+                </div>
+            </div>
+        </section>
+
+        <section class="routine-section">
+            <h2>☀️ Afternoon Routine</h2>
+            <div class="routine-list">
+                <div class="routine-item">
+                    <input type="checkbox" id="afternoon1" class="routine-checkbox">
+                    <label for="afternoon1">
+                        <span class="time">12:00 PM</span>
+                        <span class="task">Lunch Break</span>
+                    </label>
+                </div>
+                <div class="routine-item">
+                    <input type="checkbox" id="afternoon2" class="routine-checkbox">
+                    <label for="afternoon2">
+                        <span class="time">1:00 PM</span>
+                        <span class="task">Focus Work Session</span>
+                    </label>
+                </div>
+                <div class="routine-item">
+                    <input type="checkbox" id="afternoon3" class="routine-checkbox">
+                    <label for="afternoon3">
+                        <span class="time">3:00 PM</span>
+                        <span class="task">Afternoon Walk</span>
+                    </label>
+                </div>
+                <div class="routine-item">
+                    <input type="checkbox" id="afternoon4" class="routine-checkbox">
+                    <label for="afternoon4">
+                        <span class="time">5:00 PM</span>
+                        <span class="task">Review & Wrap Up</span>
+                    </label>
+                </div>
+            </div>
+        </section>
+
+        <section class="routine-section">
+            <h2>🌙 Evening Routine</h2>
+            <div class="routine-list">
+                <div class="routine-item">
+                    <input type="checkbox" id="evening1" class="routine-checkbox">
+                    <label for="evening1">
+                        <span class="time">7:00 PM</span>
+                        <span class="task">Dinner Time</span>
+                    </label>
+                </div>
+                <div class="routine-item">
+                    <input type="checkbox" id="evening2" class="routine-checkbox">
+                    <label for="evening2">
+                        <span class="time">8:00 PM</span>
+                        <span class="task">Family/Personal Time</span>
+                    </label>
+                </div>
+                <div class="routine-item">
+                    <input type="checkbox" id="evening3" class="routine-checkbox">
+                    <label for="evening3">
+                        <span class="time">9:30 PM</span>
+                        <span class="task">Prepare for Tomorrow</span>
+                    </label>
+                </div>
+                <div class="routine-item">
+                    <input type="checkbox" id="evening4" class="routine-checkbox">
+                    <label for="evening4">
+                        <span class="time">10:00 PM</span>
+                        <span class="task">Wind Down & Sleep</span>
+                    </label>
+                </div>
+            </div>
+        </section>
+
+        <div class="reset-section">
+            <button class="reset-btn" id="resetBtn">🔄 Reset Daily Tasks</button>
+        </div>
+    </div>
+
+    <script src="daily-routine.js"></script>
+</body>
+</html>
